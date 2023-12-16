@@ -1,0 +1,250 @@
+html, body {
+    font-family: 'Rog fonts', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 98%;
+}
+
+.scroll-visible body {
+    overflow: auto;
+}
+
+.header-container {
+    position: relative;
+}
+
+.header-content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    text-align: center;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 98.5%;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 50px;
+    margin-right: 15px;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 40px;
+    border-color: #000;
+    text-shadow: 4px 4px #000000;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-family:  sans-serif;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #ffcc02;
+    text-decoration: none;
+    transform: scale(1.9);
+}
+
+nav li:hover {
+    transform: translateY(-2px);
+}
+
+nav a:hover {
+    transform: scale(1.9);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+}
+
+#search {
+    padding: 8px;
+    border: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-right: 10px;
+    width: 150px;
+    overflow: hidden;
+}
+
+#search-btn {
+    background-color: #31ff03;
+    color: #000000;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#search-btn:hover {
+    background-color: #8aff88;
+    transform: scale(1.1);
+}
+
+.image-slider {
+    width: 70%;
+    overflow: visible;
+    position: relative;
+}
+
+.image-slider img {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0; 
+}
+
+.image-slider img.active {
+    opacity: 1; 
+}
+
+.titles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px; 
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title-content {
+    margin-top: 20px; 
+}
+
+.main-title {
+    color: #ffffff;
+    font-size: 2.7em;
+    overflow: visible;
+    text-shadow: 4px 4px #000000;
+}
+
+.sub-title {
+    color: #ffffff;
+    font-size: 1em;
+    overflow: visible;
+    text-shadow: 4px 4px #000000;
+}
+
+.start-trial-btn,
+.get-free-trial-btn {
+    background-color: #00f308; 
+    color: #000000; 
+    padding: 12px 16px; 
+    border: 2px solid black; 
+    border-radius: 23px; 
+    font-size: 1em; 
+    font-family: 'Rog fonts', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    font-weight: bold;
+    top: 580px;
+    margin-left: 50px;
+    z-index: 1;
+}
+
+.start-trial-btn:hover,
+.get-free-trial-btn:hover {
+    background-color: rgb(129, 245, 124);
+    transform: scale(1.1);
+}
+
+#second-background {
+    position: relative;
+}
+
+.background-text {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    color: #ffffff;
+    z-index: 1;
+    text-align: left;
+}
+
+
+.background-text .main-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Rog fonts', sans-serif;
+}
+
+.background-text .sub-title {
+    font-size: 1.2em;
+    text-shadow: 2px 2px #000000;
+    max-width: 400px; 
+    font-family: sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 0.2em;
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    bottom: 0;
+    width: 100.5%;
+}
+
+
+
+
+
+
+
